@@ -10,7 +10,13 @@ newScript.text = `
 console.log("hi");
   
 `;
-oldscript.parentNode.replaceChild(newScript, oldscript);
+// oldscript.parentNode.replaceChild(newScript, oldscript);
+
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+  if (request.action === 'changeCss') {
+    changePageCSS();
+  }
+});
 
 function changePageCSS() {
   console.log("Changing CSS");
