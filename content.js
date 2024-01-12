@@ -13,7 +13,7 @@ console.log("hi");
 oldscript.parentNode.replaceChild(newScript, oldscript);
 
 function changePageCSS() {
-
+  console.log("Changing CSS");
   const newStylesheet = document.createElement('link');
   newStylesheet.rel = 'stylesheet';
   newStylesheet.type = 'text/css';
