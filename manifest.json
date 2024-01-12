@@ -4,7 +4,7 @@
   "name": "Marble Mod",
   "version": "1.0",
   "description": "Description of your extension",
-  "permissions": ["https://www.marblerun.at/, "activeTab"],
+  "permissions": ["https://www.marblerun.at/", "activeTab"],
   "browser_action": {
     "default_icon": "marble.jpg",
     "default_popup": "popup.html"
